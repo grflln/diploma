@@ -1,0 +1,1171 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Italic";
+  src: url("../fonts/Montserrat-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Playfair Display Bold";
+  src: url("../fonts/PlayfairDisplay-Bold.ttf");
+}
+
+.container() {
+  margin: 0 auto;
+  max-width: 1110px;
+}
+
+.carousel-counter() {
+  margin-top: 58px;
+  text-align: center;
+  font-family: "Playfair Display", sans-serif;
+  color: #9e9e9e;
+  font-size: 16px;
+
+  .current-slide {
+    font-size: 28px;
+    color: #242424;
+  }
+}
+
+.blue-button() {
+  font-size: 14px;
+  font-family: "Montserrat Bold", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  background-image: -moz-linear-gradient(0deg, rgb(107, 159, 180) 0%, rgb(85, 130, 151) 100%, rgb(79, 104, 136) 100%);
+  background-image: -webkit-linear-gradient(0deg, rgb(107, 159, 180) 0%, rgb(85, 130, 151) 100%, rgb(79, 104, 136) 100%);
+  background-image: -ms-linear-gradient(0deg, rgb(107, 159, 180) 0%, rgb(85, 130, 151) 100%, rgb(79, 104, 136) 100%);
+  padding: 22px 52px;
+  border: 0;
+  border-radius: 30px;
+  outline: 0;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+
+#main {
+  background: url("../images/main-bg.png") no-repeat center;
+  background-size: cover;
+  padding: 31px 0 61px 0;
+  color: #fff;
+
+  .container {
+    .container();
+
+    header {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        text-align: center;
+
+        .logo-image {
+          width: 30px;
+          height: 22px;
+          margin: 0 auto;
+
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+
+        .logo-company {
+          font-size: 18px;
+          font-family: "Playfair Display", sans-serif;
+          line-height: 2.1;
+        }
+
+        .logo-country {
+          font-size: 10px;
+        }
+      }
+
+      #menu {
+        display: flex;
+        width: 410px;
+        justify-content: space-between;
+        margin-left: 225px;
+
+        .menu-item {
+          font-size: 13px;
+
+        }
+      }
+    }
+
+    #main-content {
+      margin-top: 253px;
+
+      #main-content-description {
+        font-size: 13px;
+        text-align: center;
+
+      }
+
+      #main-content-title {
+        font-size: 100px;
+        font-family: "Playfair Display Bold", sans-serif;
+
+        text-align: center;
+        margin-top: 71px;
+        letter-spacing: 24px;
+
+      }
+
+      .action-blue {
+        margin-top: 69px;
+        text-align: center;
+
+        .btn-blue {
+          .blue-button();
+        }
+      }
+
+      #main-content-info {
+        margin: 154px auto 0 auto;
+        display: flex;
+        width: 790px;
+        justify-content: space-between;
+
+        .main-content-info-item {
+          display: flex;
+          align-items: center;
+          width: 380px;
+
+          &:first-child {
+            width: 347px;
+          }
+
+          .main-content-info-item-number {
+            font-size: 73px;
+            margin-right: 13px;
+          }
+
+          .main-content-info-item-text {
+            font-size: 12px;
+            line-height: 1.583;
+          }
+        }
+      }
+    }
+  }
+}
+
+#about {
+  padding-top: 150px;
+  background-image: url("../images/stars.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  .container {
+    .container();
+
+    #about-title {
+      font-size: 35px;
+      font-family: "Playfair Display", sans-serif;
+      color: rgb(36, 36, 36);
+      text-align: center;
+    }
+
+    #about-content {
+      margin-top: 80px;
+      position: relative;
+
+      .about-box {
+        display: flex;
+        width: 900px;
+        justify-content: space-between;
+
+        &:last-child {
+          justify-content: flex-end;
+          width: 100%;
+          position: absolute;
+          top: 349px;
+
+          img {
+            margin-right: 80px;
+            box-shadow: -15px -15px 0px #fff;
+          }
+        }
+
+        .about-info {
+          #about-info-title {
+            margin-top: 91px;
+            font-size: 25px;
+            font-family: "Playfair Display", sans-serif;
+            color: rgb(42, 42, 42);
+          }
+
+          .about-info-text {
+            font-size: 13px;
+            font-family: "Montserrat", sans-serif;
+            color: rgb(36, 36, 36);
+            margin: 40px 0;
+            width: 465px;
+            line-height: 20px;
+
+            &:last-child {
+              width: 420px;
+              margin: 70px 0 0 0;
+            }
+          }
+
+          #about-info-since {
+            font-size: 13px;
+            font-family: "Montserrat Italic", sans-serif;
+            color: rgb(36, 36, 36);
+          }
+        }
+      }
+    }
+  }
+}
+
+#team {
+  margin-top: 264px;
+  background-image: url("../images/mountain-1.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    .container();
+
+    #team-title {
+      font-size: 35px;
+      font-family: "Playfair Display", sans-serif;
+      color: rgb(36, 36, 36);
+      text-align: center;
+    }
+
+    #team-description {
+      font-size: 13px;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(36, 36, 36);
+      line-height: 1.538;
+      text-align: center;
+      width: 520px;
+      margin: 60px auto 0 auto;
+    }
+
+    #team-carousel-container {
+      margin-top: 80px;
+      margin-bottom: 58px;
+
+      #team-carousel {
+        //width: 920px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        .team-member {
+          width: 285px;
+          height: 480px;
+          position: relative;
+          overflow: hidden;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+          .team-member-image {
+            height: 386px;
+            overflow: hidden;
+          }
+
+          .team-member-about {
+            width: 285px;
+            //height: 283px;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            padding: 30px 30px 46px;
+            box-sizing: border-box;
+            //&:hover {
+            //  transform: translateY(-169px);
+            //  transition-duration: .5s;
+            //}
+            .team-member-about-name {
+              padding-bottom: 30px;
+              position: relative;
+
+              span {
+                font-size: 25px;
+                font-family: "Playfair Display", sans-serif;
+                color: rgb(36, 36, 36);
+              }
+
+              .team-member-about-arrow {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 4px 8px 8px;
+                border-radius: 50%;
+                background-image: -moz-linear-gradient(0deg, rgb(107, 159, 180) 0%, rgb(85, 130, 151) 100%, rgb(79, 104, 136) 100%);
+                background-image: -webkit-linear-gradient(0deg, rgb(107, 159, 180) 0%, rgb(85, 130, 151) 100%, rgb(79, 104, 136) 100%);
+                background-image: -ms-linear-gradient(0deg, rgb(107, 159, 180) 0%, rgb(85, 130, 151) 100%, rgb(79, 104, 136) 100%);
+              }
+
+              .team-member-about-arrow.opened {
+                transform: rotateX(180deg);
+                transition-duration: .2s;
+              }
+            }
+
+            .team-member-about-info {
+              font-size: 13px;
+              font-family: "Montserrat", sans-serif;
+              color: rgb(36, 36, 36);
+
+              span {
+                font-family: "Montserrat Bold", sans-serif;
+              }
+
+              .team-member-about-info-item {
+                margin: 10px 0;
+
+                &:first-child {
+                  margin-top: 30px;
+                }
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+
+            }
+          }
+        }
+      }
+
+      .carousel-counter {
+        .carousel-counter();
+      }
+    }
+  }
+}
+
+#route {
+  margin-top: 100px;
+
+  .container {
+    .container();
+    background-image: url("../images/map.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: relative;
+    padding: 80px 0 60px;
+
+    #route-title {
+      font-size: 35px;
+      font-family: "Playfair Display", sans-serif;
+      color: rgb(36, 36, 36);
+      text-align: center;
+    }
+
+    #route-content {
+      margin-top: 80px;
+      margin-left: 380px;
+
+      #route-content-title {
+        font-size: 25px;
+        font-family: "Playfair Display", sans-serif;
+        color: rgb(36, 36, 36);
+      }
+
+      #route-content-description {
+        display: flex;
+        width: 230px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+
+        .route-content-description-item {
+          display: flex;
+          align-items: center;
+
+          span {
+            font-family: "Montserrat", sans-serif;
+            color: rgb(36, 36, 36);
+            font-size: 13px;
+            margin-left: 13px;
+          }
+        }
+      }
+
+      .route-content-days {
+        margin-top: 80px;
+        display: flex;
+        width: 730px;
+        justify-content: space-between;
+
+        .route-content-days-info {
+          .route-content-days-day {
+            font-size: 16px;
+            font-family: "Montserrat Bold", sans-serif;
+            color: rgb(89, 137, 157);
+          }
+
+          .route-content-days-about {
+            width: 396px;
+            margin-top: 40px;
+            font-size: 13px;
+            font-family: "Montserrat", sans-serif;
+            color: rgb(36, 36, 36);
+
+            span {
+              margin-top: 25px;
+              display: block;
+              width: 368px;
+            }
+          }
+
+          .route-content-days-footer {
+            margin-top: 80px;
+            display: flex;
+            width: 370px;
+            justify-content: space-between;
+            align-items: center;
+
+            .route-content-days-price {
+              display: flex;
+              align-items: center;
+
+              span {
+                margin-left: 13px;
+                font-size: 13px;
+                font-family: "Montserrat", sans-serif;
+                color: rgb(36, 36, 36);
+              }
+            }
+
+            .action-blue {
+              .btn-blue {
+                .blue-button();
+              }
+            }
+          }
+        }
+
+        .route-content-days-number {
+          margin-top: 80px;
+          text-align: center;
+
+          .day-number {
+            padding: 15px 0;
+            font-size: 10px;
+            font-family: "Montserrat", sans-serif;
+            color: rgb(171, 171, 171);
+
+            &.active {
+              font-size: 16px;
+              font-family: "Montserrat", sans-serif;
+              color: rgb(36, 36, 36);
+            }
+
+            &:first-child {
+              padding-top: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .trip-number {
+      position: absolute;
+      border-radius: 50%;
+      background-color: rgb(36, 36, 36);
+      color: #fff;
+      padding: 0 8px;
+      font-size: 18px;
+      font-family: "Playfair Display", sans-serif;
+
+      &#trip-one {
+        bottom: 119px;
+        left: 192px;
+      }
+
+      &#trip-two {
+        bottom: 186px;
+        left: 72px;
+      }
+
+      &#trip-three {
+        bottom: 155px;
+        left: 16px;
+      }
+    }
+
+    .trip-map {
+      position: absolute;
+      bottom: 131px;
+      left: 22px;
+    }
+  }
+}
+
+#nearest {
+  margin-top: 183px;
+
+  .container {
+    .container();
+
+    #nearest-title {
+      font-size: 35px;
+      font-family: "Playfair Display", sans-serif;
+      color: rgb(36, 36, 36);
+      text-align: center;
+    }
+
+    #nearest-carousel-container {
+      margin-top: 44px;
+
+      #nearest-carousel {
+        display: flex;
+        flex-wrap: wrap;
+        width: 920px;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        .nearest-carousel-item {
+          margin-top: 32px;
+          padding: 200px 32px 30px;
+          width: 445px;
+          box-sizing: border-box;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+
+          .nearest-carousel-item-title {
+            font-size: 20px;
+            font-family: "Playfair Display", sans-serif;
+            color: rgb(255, 255, 255);
+          }
+
+          .nearest-carousel-item-description {
+            display: flex;
+            width: 315px;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px 0;
+
+            .nearest-carousel-item-description-item {
+              display: flex;
+              align-items: center;
+
+              span {
+                margin-left: 12px;
+                font-size: 13px;
+                color: rgb(255, 255, 255);
+              }
+            }
+
+          }
+
+          .nearest-carousel-item-action {
+            .nearest-carousel-item-action-btn {
+              font-size: 13px;
+              font-family: "Montserrat Bold", sans-serif;
+              color: rgb(255, 255, 255);
+              background-image: -moz-linear-gradient(0deg, rgb(107, 159, 180) 0%, rgb(85, 130, 151) 100%, rgb(79, 104, 136) 100%);
+              background-image: -webkit-linear-gradient(0deg, rgb(107, 159, 180) 0%, rgb(85, 130, 151) 100%, rgb(79, 104, 136) 100%);
+              background-image: -ms-linear-gradient(0deg, rgb(107, 159, 180) 0%, rgb(85, 130, 151) 100%, rgb(79, 104, 136) 100%);
+              padding: 18px 34px;
+              border-radius: 50px;
+              border: 0;
+              outline: 0;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#reviews {
+  margin-top: 320px;
+  background: url("../images/mountain-2.png") no-repeat right;
+  background-size: cover;
+
+  .container {
+    .container();
+
+    #reviews-title {
+      font-size: 35px;
+      font-family: "Playfair Display", sans-serif;
+      color: rgb(36, 36, 36);
+      text-align: center;
+    }
+
+    #reviews-carousel-container {
+
+      #reviews-carousel {
+        display: flex;
+        width: 920px;
+        justify-content: space-between;
+        margin: 80px auto 0 auto;
+
+        .reviews-carousel-item {
+          background-color: rgb(255, 255, 255);
+          box-shadow: 0 0 36px 4px rgba(97, 147, 168, 0.1);
+          padding: 30px 27px 95px;
+          position: relative;
+
+          .reviews-carousel-item-header {
+            display: flex;
+            align-items: center;
+
+            .reviews-carousel-item-header-text {
+              margin-left: 30px;
+
+              .reviews-carousel-item-header-text-name {
+                font-size: 20px;
+                font-family: "Playfair Display", sans-serif;
+                color: rgb(36, 36, 36);
+              }
+
+              .reviews-carousel-item-header-text-tour {
+                font-size: 13px;
+                color: rgb(36, 36, 36);
+                margin-top: 16px;
+              }
+            }
+          }
+
+          .reviews-carousel-item-review {
+            width: 390px;
+            font-size: 13px;
+            color: rgb(36, 36, 36);
+            line-height: 19px;
+            margin-top: 33px;
+
+            #read-more {
+              display: none;
+            }
+          }
+
+          .reviews-carousel-item-review-more {
+            margin-top: 30px;
+            font-size: 13px;
+            font-family: "Montserrat", sans-serif;
+            color: rgb(36, 36, 36);
+            text-decoration: underline;
+            border: 0;
+            background: transparent;
+            cursor: pointer;
+            padding: 0;
+          }
+        }
+
+        .reviews-carousel-item-review-footer {
+          position: absolute;
+          bottom: 30px;
+          display: flex;
+          width: 390px;
+          justify-content: space-between;
+
+          .reviews-carousel-item-review-footer-rating {
+            display: flex;
+            align-items: center;
+
+            img {
+              margin-right: 10px;
+            }
+
+            span {
+              margin-left: 5px;
+              font-size: 13px;
+              font-family: "Montserrat", sans-serif;
+              color: rgb(36, 36, 36);
+              line-height: 1.462;
+            }
+          }
+
+          .reviews-carousel-item-review-footer-date {
+            font-size: 13px;
+            font-family: "Montserrat", sans-serif;
+            color: rgb(202, 202, 202);
+            line-height: 1.462;
+          }
+        }
+      }
+
+      .carousel-counter {
+        .carousel-counter();
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+#stop {
+  margin-top: 180px;
+
+  .container {
+    .container();
+
+    #stop-title {
+      font-size: 35px;
+      font-family: "Playfair Display", sans-serif;
+      color: rgb(36, 36, 36);
+      text-align: center;
+    }
+
+    #stop-description {
+      font-size: 13px;
+      color: rgb(36, 36, 36);
+      text-align: center;
+      margin: 60px auto 0 auto;
+      max-width: 489px;
+    }
+
+    #stop-content {
+      .stop-content-item {
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        max-width: 1065px;
+        justify-content: space-between;
+
+        &:nth-of-type(even) {
+          margin-left: auto;
+
+          .stop-content-item-image {
+            order: 2;
+          }
+        }
+
+        .stop-content-item-info {
+          max-width: 382px;
+
+          .stop-content-item-info-name {
+            font-size: 25px;
+            font-family: "Playfair Display", sans-serif;
+            color: rgb(36, 36, 36);
+          }
+
+          .stop-content-item-info-place {
+            display: flex;
+            align-items: end;
+            margin-top: 20px;
+
+            .stop-content-item-info-place-name {
+              font-size: 13px;
+              color: rgb(158, 158, 158);
+              margin-left: 10px;
+            }
+          }
+
+          .stop-content-item-info-description {
+            margin-top: 60px;
+            font-size: 13px;
+            color: rgb(36, 36, 36);
+          }
+
+          .stop-content-item-info-price {
+            display: flex;
+            align-items: center;
+            margin-top: 78px;
+
+            .stop-content-item-info-price-cost {
+              font-size: 13px;
+              color: rgb(36, 36, 36);
+              margin-left: 12px;
+            }
+          }
+        }
+      }
+
+      #stop-content-button {
+        text-align: center;
+
+        a {
+          font-size: 13px;
+          font-family: "Montserrat Bold", sans-serif;
+          color: rgb(36, 36, 36);
+          text-align: center;
+          padding: 25px 55px;
+          border: 1px solid rgb(36, 36, 36);
+          border-radius: 30px;
+          display: inline-block;
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+}
+
+#faq {
+  margin-top: 180px;
+  background: url("../images/mountain-faq.png") bottom no-repeat;
+  background-size: contain;
+  padding-bottom: 145px;
+
+  .container {
+    .container();
+
+    #faq-title {
+      text-align: center;
+      font-size: 35px;
+      font-family: "Playfair Display", sans-serif;
+      color: rgb(36, 36, 36);
+    }
+
+    #faq-content {
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-between;
+
+      #faq-content-main {
+        width: 602px;
+
+        .ui-accordion .ui-accordion-header {
+          font-size: 20px;
+          font-family: "Playfair Display", sans-serif;
+          color: rgb(36, 36, 36);
+          padding: 30px 22px;
+          margin: 0;
+        }
+
+        .ui-state-default {
+          background: transparent;
+          border: 0;
+          border-top: 1px solid #d4d4d4;
+
+          &:last-of-type {
+            border-bottom: 1px solid #d4d4d4;
+          }
+
+          &::after {
+            content: "+";
+            position: absolute;
+            right: 22px;
+            font-size: 25px;
+            line-height: 19px;
+          }
+        }
+
+        .ui-state-active {
+          background: transparent;
+          border: 0;
+          border-top: 1px solid #d4d4d4;
+
+          &:last-of-type {
+            border-bottom: 0;
+          }
+
+          &::after {
+            content: "-";
+            position: absolute;
+            right: 22px;
+            font-size: 25px;
+            line-height: 19px;
+          }
+        }
+
+        .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+          border-radius: 0;
+        }
+
+        .ui-accordion .ui-accordion-content {
+          padding-top: 0;
+          padding-bottom: 0;
+          border: 0;
+
+          &:last-of-type {
+            border-bottom: 1px solid #d4d4d4;
+          }
+
+          ul {
+            margin: 0;
+            padding: 0 90px 30px 0;
+
+            li {
+              font-size: 13px;
+              font-family: Montserrat, sans-serif;
+              color: rgb(36, 36, 36);
+              line-height: 1.462;
+              margin-bottom: 20px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#feedback {
+  padding: 125px 0 120px 0;
+  background: url("../images/feedback-bg.png") no-repeat center;
+  background-size: cover;
+
+  .container {
+    .container ();
+
+    .feedback-title {
+      font-size: 35px;
+      font-family: "Playfair Display", sans-serif;
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+
+    .feedback-description {
+      max-width: 449px;
+      font-size: 13px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      margin: 60px auto 0 auto;
+    }
+
+    .feedback-form {
+      width: 540px;
+      border: 1px solid #fff;
+      color: #ffffff;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.1);
+      margin: 80px auto 0 auto;
+      padding: 60px 65px;
+      box-sizing: border-box;
+
+      .feedback-form-title {
+        font-size: 25px;
+        font-family: "Playfair Display", sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+
+      .feedback-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+        input {
+          border: 1px solid #fff;
+          border-radius: 30px;
+          background: transparent;
+          padding: 21px 30px;
+          font-size: 13px;
+          color: rgb(231, 231, 231);
+          box-sizing: border-box;
+
+          &.form-input {
+            width: 100%;
+            margin-bottom: 15px;
+          }
+
+          &::placeholder {
+            font-size: 13px;
+            color: rgb(231, 231, 231);
+          }
+
+        }
+
+        .form-checkbox {
+          position: relative;
+          font-size: 0;
+          margin-top: 20px;
+
+          #agreed {
+            position: absolute;
+            //opacity: 0;
+            cursor: pointer;
+          }
+
+          label {
+            font-size: 13px;
+            color: rgb(255, 255, 255);
+            line-height: 1.462;
+            margin-left: 30px;
+            display: block;
+            cursor: pointer;
+
+            .agreed-link {
+              color: #6a9db2;
+            }
+          }
+        }
+      }
+
+      .form-submit {
+        .blue-button();
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+#contacts {
+  padding-top: 150px;
+
+  .container {
+    .container();
+
+    .contacts-title {
+      font-size: 35px;
+      font-family: "Playfair Display", sans-serif;
+      color: rgb(36, 36, 36);
+      text-align: center;
+    }
+
+    .contacts-content {
+      margin-top: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .contacts-content-block {
+        .contacts-content-block-title {
+          font-size: 20px;
+          font-family: "Playfair Display", sans-serif;
+          color: rgb(36, 36, 36);
+        }
+
+        .contacts-content-block-wrapper {
+          margin-top: 33px;
+
+          .contacts-content-block-wrapper-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .contacts-text {
+              text-decoration: none;
+              font-size: 13px;
+              color: rgb(36, 36, 36);
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .contacts-switcher {
+      text-align: center;
+      margin-top: 95px;
+
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 223px;
+        height: 61px;
+        border: 1px solid #6b9fb4;
+        box-sizing: border-box;
+        border-radius: 30px;
+
+        &:before {
+          content: 'Осло';
+          position: absolute;
+          top: 21px;
+          left: 41px;
+          z-index: 1;
+          font-size: 13px;
+          color: #242424FF;
+        }
+
+        &:after {
+          content: 'Минск';
+          position: absolute;
+          top: 21px;
+          right: 35px;
+          z-index: 1;
+          font-size: 13px;
+          color: #242424FF;
+        }
+
+        .after-color:after {
+          content: 'Минск';
+          position: absolute;
+          top: 21px;
+          right: 35px;
+          z-index: 1;
+          font-size: 13px;
+          color: #fff;
+        }
+
+        .before-color:before {
+          content: 'Осло';
+          position: absolute;
+          top: 21px;
+          left: 41px;
+          z-index: 1;
+          font-size: 13px;
+          color: #fff;
+        }
+
+        .checkbox {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+
+        .switcher-slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: transparent;
+          transition: .4s;
+
+          &:before {
+            position: absolute;
+            content: "";
+            height: 60px;
+            width: 118px;
+            background-image: linear-gradient(0deg, #6b9eb4 0%, #578699 100%);
+            transition: .4s;
+            top: 0;
+            left: 0;
+            border-radius: 30px;
+          }
+        }
+      }
+
+      .checkbox:checked + .switcher-slider {
+        background: transparent;
+      }
+
+
+      .checkbox:checked + .switcher-slider:before {
+        transform: translateX(105px);
+      }
+    }
+  }
+  #contacts-map {
+    margin-top: 47px;
+  }
+}
+
+#subscribe {
+  padding-top: 376px;
+}
