@@ -49,21 +49,21 @@ $(document).ready(() => {
     ymaps.ready(init);
 
     function init() {
-        var myMap = new ymaps.Map('map', {
-            center: [55.751574, 37.573856],
-            zoom: 9,
-            controls: []
+        var myMap = new ymaps.Map('contacts-map', {
+            center: [53.90545793, 27.52070917],
+            zoom: 15,
+            controls: ['zoomControl']
         }, {
-            searchControlProvider: 'yandex#search'
+            searchControlProvider: 'yandex#search',
         });
-
+        myMap.behaviors.disable('scrollZoom');
         var placemark = new ymaps.Placemark(myMap.getCenter(), {
             // Зададим содержимое заголовка балуна.
-            balloonContentHeader: '<a href = "#" class="map-title">Туристическая компания «Northern Tour»</a><br>',
+            balloonContentHeader: '<a href = "#" class="map-title">Туристическая компания <br /> «Northern Tour»</a><br>',
             // Зададим содержимое основной части балуна.
             balloonContentBody: '<p class="map-description">1-й Загородный пер. 20, Минск, Беларусь</p>',
             // Зададим содержимое нижней части балуна.
-            balloonContentFooter: '<div class="map-schedule"><span class="map-bold">Пн — Пт: </span>с 10:00 до 22:00</div>' + '<div class="map-schedule"><span class="map-bold">Сб — Вс: </span>с 10:00 до 22:00</div>',
+            balloonContentFooter: '<div class="map-schedule"><span class="map-bold">Пн — Пт:&nbsp </span>с 10:00 до 22:00</div>' + '<div class="map-schedule"><span class="map-bold">Сб — Вс:&nbsp </span>выходной</div>',
         });
         // Добавим метку на карту.
         myMap.geoObjects.add(placemark);

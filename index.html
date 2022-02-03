@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Туристическая компания "Northern Tour"</title>
     <meta name="viewport" content="width=device-width">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a624c054-6da2-494d-8e43-995ba134ec06&lang=ru_RU" type="text/javascript">
+    </script>
     <link rel="stylesheet" href="less/jquery-ui.min.css">
     <link rel="stylesheet/less" type="text/css" href="less/slick.less">
     <link rel="stylesheet/less" type="text/css" href="less/slick-theme.less">
@@ -629,21 +631,59 @@
             </label>
         </div>
     </div>
-    <div id="contacts-map" style="position:relative;overflow:hidden;"><a
-            href="https://yandex.ru/maps/157/minsk/?utm_medium=mapframe&utm_source=maps"
-            style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a><a
-            href="https://yandex.ru/maps/157/minsk/house/Zk4YcwVgT0MGQFtpfXVxdHhrZw==/?ll=27.523885%2C53.906033&utm_medium=mapframe&utm_source=maps&z=16.49"
-            style="color:#eee;font-size:12px;position:absolute;top:14px;">1-й Загородный переулок, 20 — Яндекс.Карты</a>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CCU5aAX3XC" width="100%" height="400" frameborder="1"
-                allowfullscreen="true" style="position:relative;"></iframe>
-    </div>
+    <div id="contacts-map"></div>
 </div>
 
-<div id="subscribe">
+<footer id="footer">
     <div class="container">
-        <div class="subscribe-title">Подпишитесь на рассылку</div>
+        <div class="footer-content">
+            <a href="#" class="logo">
+                <div class="logo-image">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="logo-company">
+                    Northern Tour
+                </div>
+                <div class="logo-country">
+                    Norway
+                </div>
+            </a>
+            <div class="footer-center">
+                <div class="footer-center-title">Подпишитесь на рассылку</div>
+                <div class="footer-center-description">Получайте уведомления о новых турах,
+                    скидках и интересных маршрутах</div>
+                <div class="footer-center-form">
+                    <form class="footer-form" action="#" method="get">
+                        <input type="email" placeholder="Введите e-mail" name="email" required>
+                    </form>
+                    <button type="submit" class="footer-button"></button>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-right-title">
+                    Мы в социальных сетях
+                </div>
+                <div class="footer-right-socials">
+                    <a href="#" class="footer-right-socials-link">
+                        <img src="images/footer-instagram.svg" alt="">
+                    </a>
+                    <a href="#" class="footer-right-socials-link">
+                        <img src="images/footer-facebook.svg" alt="">
+                    </a>
+                    <a href="#" class="footer-right-socials-link">
+                        <img src="images/footer-twitter.svg" alt="">
+                    </a>
+                    <a href="#" class="footer-right-socials-link">
+                        <img src="images/footer-youtube.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+    <div class="footer-second">
+        © Все права защищены, 2020
+    </div>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
